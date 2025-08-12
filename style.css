@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    /* font-family: "Audiowide", sans-serif; */
+    transition: all ease-in-out 0.3s;
+}
+
+
+nav {
+    background-color: #0F0F0F;
+    padding: 12px 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    width: 35%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.nav-links li {
+    cursor: pointer;
+}
+
+.nav-links li:hover {
+    color: #d70606;
+    border-bottom: 2px solid #FF2E2E;
+}
+
+
+
+.quote-btn {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FF2E2E;
+    height: 35px;
+    padding: 5px 20px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+
+
+.quote-btn:hover {
+    background-color: #d70606;
+    justify-content: space-between;
+}
+
+
+#logo {
+    font-family: "Audiowide", sans-serif;
+}
+
+
+.hero-section {
+    background-color: #F5F5F5;
+    padding: 40px;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text {
+    width: 40%;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+}
+
+.hero-text p {
+    font-size: 14px;
+    margin: 20px 0px;
+}
+
+
+.hero-image {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image img {
+    height: 500px;
+}
+
+.book-btn {
+    background-color: #FF2E2E;
+    border: none;
+    color: white;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.book-btn:hover {
+    background-color: #d70606;
+}
+
+
+
+
+
+
+/* Responsive Design */
+
+@media(max-width : 768px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero-section {
+        flex-direction: column-reverse;
+
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        margin-top: 100px;
+        height: 350px;
+    }
+
+    .hero-text {
+        width: 100%;
+        text-align: center;
+    }
+
+
+}
