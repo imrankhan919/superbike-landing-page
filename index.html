@@ -7,7 +7,7 @@
     <title>SuperBike</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -15,11 +15,25 @@
     <!-- Navbar -->
 
     <nav>
-        <h1 id="logo">SuperBike</h1>
+        <a href="#hero-section">
+            <h1 id="logo">
+                SuperBike
+            </h1>
+        </a>
+
         <ul class="nav-links">
-            <li>Highlights</li>
-            <li>Specifications</li>
-            <li>Testimonials</li>
+            <li><a href="#highlight-section">Highlights</a></li>
+            <li>
+                <a href="#specification-section">
+                    Specifications
+
+                </a>
+            </li>
+            <li>
+                <a href="#color-options-section">
+                    Colors
+                </a>
+            </li>
 
 
         </ul>
@@ -30,25 +44,26 @@
 
     <!-- Hero Section -->
 
-    <section class="hero-section">
-        <div class="hero-text">
+    <section id="hero-section" class="hero-section">
+        <div data-aos="fade-right" class="hero-text">
             <h1>OWN THE STREETS. RULE THE NIGHT.</h1>
             <p>Experience the Yamaha MT-15 — a fusion of power, precision, and street-dominating style. Engineered for
                 thrill-seekers, designed for the future. This isn’t just a ride — it’s a statement.</p>
             <button class="book-btn">Book Your Ride</button>
         </div>
 
-        <div class="hero-image">
+        <div data-aos="fade-down" class="hero-image">
+            <img id="circle" src="./assets/circle.png" alt="">
             <img src="./assets/hero.png" alt="">
         </div>
     </section>
 
     <!-- Highlights -->
 
-    <section class="highlight-section">
+    <section id="highlight-section" class="highlight-section">
         <h1 class="section-heading">Highlights</h1>
 
-        <div class="highlights">
+        <div data-aos="fade-down" class="highlights">
 
             <div class="features">
                 <ul class="progress-list">
@@ -84,14 +99,14 @@
                     </li>
                 </ul>
             </div>
-            <div class="features-icons">
+            <div data-aos="fade-up" class="features-icons">
 
 
-                <div class="features-icon"></div>
-                <div class="features-icon"></div>
-                <div class="features-icon"></div>
-                <div class="features-icon"></div>
-                <div class="features-icon"></div>
+                <div data-aos="flip-down" class="features-icon"></div>
+                <div data-aos="flip-up" class="features-icon"></div>
+                <div data-aos="flip-down" class="features-icon"></div>
+                <div data-aos="flip-up" class="features-icon"></div>
+                <div data-aos="flip-down" class="features-icon"></div>
 
 
             </div>
@@ -104,43 +119,43 @@
 
 
     <!-- Specifications -->
-    <section class="specification-section">
+    <section id="specification-section" class="specification-section">
         <h1 class="section-heading">Specifications</h1>
 
         <div class="specifications">
-            <div class="specification-card">
+            <div data-aos="zoom-out" class="specification-card">
                 <h1><i class="fa-solid fa-motorcycle"></i></h1>
                 <p>155 CC Liquid Cooled Engine</p>
             </div>
-            <div class="specification-card">
+            <div data-aos="zoom-out" class="specification-card">
                 <h1><i class="fa-solid fa-gas-pump"></i></h1>
                 <p>E20 Petrol Fuel</p>
             </div>
-            <div class="specification-card">
+            <div data-aos="zoom-out" class="specification-card">
                 <h1><i class="fa-solid fa-gears"></i></h1>
                 <p>6 Gears Manual Transmission</p>
             </div>
-            <div class="specification-card">
+            <div data-aos="zoom-out" class="specification-card">
                 <h1><i class="fa-solid fa-weight-hanging"></i></h1>
                 <p>Kerb Weight 141 KG</p>
             </div>
-            <div class="specification-card">
+            <div data-aos="zoom-out" class="specification-card">
                 <h1><i class="fa-solid fa-person-biking"></i></h1>
                 <p>Seat Height 810mm</p>
             </div>
-            <div class="specification-card">
+            <div data-aos="zoom-out" class="specification-card">
                 <h1><i class="fa-solid fa-car-battery"></i></h1>
                 <p>Battery 12v 4.0 Amp</p>
             </div>
-            <div class="specification-card">
+            <div data-aos="zoom-out" class="specification-card">
                 <h1><i class="fa-solid fa-gauge-high"></i></h1>
                 <p>Digital Speedometer</p>
             </div>
-            <div class="specification-card">
+            <div data-aos="zoom-out" class="specification-card">
                 <h1><i class="fa-solid fa-compass"></i></h1>
                 <p>Turn By Turn Navigation</p>
             </div>
-            <div class="specification-card">
+            <div data-aos="zoom-out" class="specification-card">
                 <h1><i class="fa-solid fa-lightbulb"></i></h1>
                 <p>LED Headlight</p>
             </div>
@@ -150,20 +165,58 @@
     </section>
 
     <!-- Color Options -->
-    <section class="color-options-section">
+    <section id="color-options-section" class="color-options-section">
         <h1 class="section-heading">Colors</h1>
         <swiper-container class="mySwiper" navigation="true">
             <swiper-slide>
                 <img src="./assets/color_04.webp" alt="">
             </swiper-slide>
-            <swiper-slide> <img src="./assets/color_06.webp" alt=""></swiper-slide>
-            <swiper-slide> <img src="./assets/color_04.webp" alt=""></swiper-slide>
-            <swiper-slide> <img src="./assets/icestorm.webp" alt=""></swiper-slide>
-            <swiper-slide> <img src="./assets/violet.webp" alt=""></swiper-slide>
-            <swiper-slide> <img src="./assets/mt15_motogp.webp" alt=""></swiper-slide>
-            <swiper-slide> <img src="./assets/silverCyan.webp" alt=""></swiper-slide>
+            <swiper-slide> <img data-aos="fade-up" src="./assets/color_06.webp" alt=""></swiper-slide>
+            <swiper-slide> <img data-aos="fade-up" src="./assets/color_04.webp" alt=""></swiper-slide>
+            <swiper-slide> <img data-aos="fade-up" src="./assets/icestorm.webp" alt=""></swiper-slide>
+            <swiper-slide> <img data-aos="fade-up" src="./assets/violet.webp" alt=""></swiper-slide>
+            <swiper-slide> <img data-aos="fade-up" src="./assets/mt15_motogp.webp" alt=""></swiper-slide>
+            <swiper-slide> <img data-aos="fade-up" src="./assets/silverCyan.webp" alt=""></swiper-slide>
         </swiper-container>
     </section>
+
+
+    <!-- Quote Section -->
+
+    <section class="quote-section">
+        <h1 class="section-heading">Get Quote</h1>
+
+        <div data-aos="fade-down" class="quote">
+
+            <div class="quote-image">
+                <img data-aos="flip-up" id="responsive-quote-img" src="./assets/mt15_motogp.webp" alt="">
+            </div>
+
+            <div class="quote-form">
+                <h2>Get Your Vehicle Quotation</h2>
+                <form>
+                    <select>
+                        <option value="1">Indore</option>
+                        <option value="1">Bhopal</option>
+                        <option value="1">Ujjain</option>
+                        <option value="1">Mandsaur</option>
+                    </select>
+                    <p>*Y-Connect & LED Flasher Not Equipped
+                    </p>
+                    <p>As per VAHAN Portal : Black Metallic X
+                    </p>
+                    <h3>Ex-Showroom Price in Indore</h3>
+                    <h1 id="price">₹ 1,69,550*</h1>
+                    <button class="submit-btn">Book Now</button>
+                </form>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
 
 
     <div class="fab">
@@ -175,7 +228,10 @@
     <!-- CDN Scripts -->
     <script src="https://kit.fontawesome.com/e5a77a4fe1.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
